@@ -17,5 +17,5 @@ if (navigator.vibrate) {
 
     setTimeout((function() {
         navigator.vibrate(20);
-    }).bind(this), 2200);
+    }).bind(this), 1800);
 }
