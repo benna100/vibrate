@@ -1,9 +1,12 @@
 console.log("hej");
 
 
+// enable vibration support
+navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
 
-if ("vibrate" in navigator) {
+if (navigator.vibrate) {
+	// vibration API supported
     setTimeout((function() {
-        window.navigator.vibrate(200);
+        navigator.vibrate(1000);
     }).bind(this), 2000);
 }
