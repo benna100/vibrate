@@ -4,10 +4,18 @@ console.log("hej1");
 // enable vibration support
 navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
 
+
+
+
+document.getElementsByClassName('bounce')[0].classList.add('animate');
+
 if (navigator.vibrate) {
-	// vibration API supported
-	alert("vibrate");
+    // vibration API supported
     setTimeout((function() {
-        navigator.vibrate(1000);
+        navigator.vibrate(50);
+    }).bind(this), 1250);
+
+    setTimeout((function() {
+        navigator.vibrate(50);
     }).bind(this), 2000);
 }
