@@ -12,10 +12,10 @@ document.getElementsByClassName('bounce')[0].classList.add('animate');
 if (navigator.vibrate) {
     // vibration API supported
     setTimeout((function() {
-        navigator.vibrate(50);
+        navigator.vibrate(20);
     }).bind(this), 1250);
 
     setTimeout((function() {
-        navigator.vibrate(50);
-    }).bind(this), 2000);
+        navigator.vibrate(20);
+    }).bind(this), 2200);
 }
