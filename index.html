@@ -5,8 +5,8 @@
     }
     
     .bounce {
-		height: 10%;
-		width: 10%;
+		height: 100px;
+		width: 100px;
 		top: 18%;
         background-color: blue;
         position: absolute;
@@ -28,10 +28,10 @@
             transform: translate(-50%, 0);
         }
         40% {
-            transform: translate(-50%, -100%);
+            transform: translate(-50%, -100px);
         }
         60% {
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50px);
         }
     }
     
@@ -40,7 +40,7 @@
         width: 500px;
         background-color: black;
         position: absolute;
-        top: 200px;
+        top: calc(18% + 100px);
         left: 50%;
         transform: translateX(-50%);
     }
